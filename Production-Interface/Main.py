@@ -30,7 +30,7 @@ from RunTestWorker import RunTestWorker
 
 app = QtWidgets.QApplication(argv)
 try:
-	gui = AppGUI()
+	gui = AppGUI()	# TODO: Fix problem that occurs at this line
 	widget = gui.getWidget()
 	widget.show()
 except SystemExit as error:
