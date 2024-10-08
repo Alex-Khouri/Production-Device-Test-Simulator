@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include <vector>
 
-namespace ProductionDevice {
+namespace Program {
 	////////////////////////////////////////
 	// FUNCTIONS
 	int getLocalIP();
@@ -45,7 +45,7 @@ namespace ProductionDevice {
 	////////////////////////////////////////
 	// DYNAMIC MESSAGE VALUES
 	std::string IDMessage;
-	char* msgBuffer[ProductionDevice::BUFFER_SIZE];
+	char* msgBuffer[Program::BUFFER_SIZE];
 	////////////////////////////////////////
 	// MESSAGING DATA STRUCTURES
 	std::list<std::string> receivedMsgs;
@@ -64,7 +64,7 @@ namespace ProductionDevice {
 	 * ----------------------------------------
 	 * NB: These must also be defined as constants
 	 */
-	std::string status							= ProductionDevice::STOPPED;
+	std::string status							= Program::STOPPED;
 	std::mutex statusLock;
 	bool listening								= false;
 	bool processing								= false;

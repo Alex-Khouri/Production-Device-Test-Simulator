@@ -1,2 +1,2 @@
-cd C++
+cd Production-Device
 make

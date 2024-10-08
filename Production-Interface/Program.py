@@ -442,9 +442,11 @@ class AppGUI(QtWidgets.QMainWindow):
 			else:
 				self.buttonStartTest.setDisabled(True)
 			if self.checkGenerateFile.isChecked():
+				self.boxFormat.setDisabled(False)
 				self.buttonOutputLocation.setDisabled(False)
 				self.lineOutputLocation.setDisabled(False)
 			else:
+				self.boxFormat.setDisabled(True)
 				self.buttonOutputLocation.setDisabled(True)
 				self.lineOutputLocation.setDisabled(True)
 
