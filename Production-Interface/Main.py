@@ -1,33 +1,31 @@
 ########################################
-if __name__ == "__main__":
-	import warnings
-	warnings.filterwarnings("ignore")
+# ***** IMPORTS *****
+import warnings
+warnings.filterwarnings("ignore")
 
-	import matplotlib
-	from matplotlib import pyplot
-	from matplotlib.backends.backend_pdf import PdfPages
-	from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-	from matplotlib.figure import Figure
-	matplotlib.use('Qt5Agg')
+import matplotlib
+from matplotlib import pyplot
+from matplotlib.backends.backend_pdf import PdfPages
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+matplotlib.use('Qt5Agg')
 
-	from PyQt5 import QtCore, QtWidgets
-	from PyQt5.QtCore import *
-	from PyQt5.QtGui import *
-	from PyQt5.QtWidgets import *
+from PyQt5 import QtCore, QtWidgets
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 
-	import socket
-	from datetime import datetime
-	from sys import argv
-	from sys import exit
-	from time import sleep
-	from threading import Thread
+import socket
+from datetime import datetime
+from sys import argv
+from sys import exit
+from time import sleep
+from threading import Thread
 
-	from Config import *
-	from AppGUI import AppGUI
-	from DataCanvas import DataCanvas
-	from RunTestWorker import RunTestWorker
-
-# TODO: Fix imports
+from Config import *
+from AppGUI import AppGUI
+from DataCanvas import DataCanvas
+from RunTestWorker import RunTestWorker
 ########################################
 
 app = QtWidgets.QApplication(argv)
