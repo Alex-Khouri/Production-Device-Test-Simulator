@@ -1,1 +1,1 @@
-python3 ./Production-Interface/Main.py
+python3 ./Production-Interface/MainWindow.py

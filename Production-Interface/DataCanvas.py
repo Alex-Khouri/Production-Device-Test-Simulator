@@ -23,8 +23,6 @@ from time import sleep
 from threading import Thread
 
 from Config import *
-import AppGUI
-import RunTestWorker
 ########################################
 
 class DataCanvas(FigureCanvas):
