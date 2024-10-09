@@ -1,3 +1,5 @@
 /Production-Device/Bin
 /Production-Device/Obj
 /Production-Interface/__pycache__
+
+*.pyc
